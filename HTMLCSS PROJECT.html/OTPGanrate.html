@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font: 1em sans-serif;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Function to generate OTP
+function generateOTP() {
+
+let digits = '0123456789';
+let OTP = '';
+for (let i = 0; i < 6; i++) {
+    OTP += digits[Math.floor(Math.random() * 10)];
+}
+return OTP;
+}
+
+document.write("OTP of 6 digits: "+"<br>");
+document.write(generateOTP());
+
+    </script>
+</body>
+</html>
